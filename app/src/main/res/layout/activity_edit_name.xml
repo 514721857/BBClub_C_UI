@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/pay_success_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+
+
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/linear_img"
+        android:layout_below="@+id/framelayout_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/info_sex"
+            android:layout_width="200px"
+            android:layout_height="200px"
+
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_head" />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/view_margin_30"
+            android:layout_above="@+id/linear_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="点击头像上传照片"
+            android:textColor="@color/home_text_mid"
+            android:textSize="@dimen/text_button_30" />
+
+        </com.zhy.autolayout.AutoLinearLayout>>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginTop="@dimen/view_text_60"
+
+        android:layout_marginRight="@dimen/view_margin_30"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_width="688px"
+        android:layout_height="280px"
+        android:layout_below="@+id/linear_img"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/edit_name_bg">
+
+
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="@dimen/view_text_60"
+                android:id="@+id/linear_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_order"
+                android:layout_marginLeft="@dimen/view_text_60"
+                android:maxLines="1"
+                android:text="昵称："
+                android:textColor="@color/home_text_mid"
+                android:textSize="@dimen/text_button_30" />
+
+
+
+                <EditText
+                    android:layout_marginRight="@dimen/view_text_60"
+                    android:id="@+id/et_verify_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="点击输入您的昵称"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:paddingLeft="30px"
+                    android:textColorHint="@color/login_text"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_button_30"  />
+
+
+
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="@dimen/view_text_60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_order"
+                android:layout_marginLeft="@dimen/view_text_60"
+                android:maxLines="1"
+                android:text="生日："
+                android:textColor="@color/home_text_mid"
+                android:textSize="@dimen/text_button_30" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_order"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/view_text_60"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="2017/8/12"
+                android:drawablePadding="@dimen/view_margin_15"
+                android:drawableRight="@mipmap/down"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_button_30" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@mipmap/btn_login"
+        android:gravity="center"
+        android:paddingBottom="20px"
+        android:text="@string/finsh_regist"
+        android:textColor="@color/login_withe"
+        android:textSize="40px" />
+</com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

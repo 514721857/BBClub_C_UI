@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300px"
+    android:background="@mipmap/sign_record_bg"
+    android:gravity="center"
+
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_60"
+        android:id="@+id/linear_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_order"
+            android:layout_marginLeft="@dimen/view_text_60"
+            android:maxLines="1"
+            android:text="部落"
+            android:textColor="@color/home_text"
+            android:textSize="@dimen/text_button_30" />
+
+        <TextView
+            android:id="@+id/et_verify_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/view_text_60"
+
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingLeft="30px"
+            android:text="比比部落"
+            android:textColor="@color/home_text_mid"
+            android:textSize="@dimen/text_button_30" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_order"
+            android:layout_marginLeft="@dimen/view_text_60"
+            android:maxLines="1"
+            android:text="勋章数"
+            android:textColor="@color/home_text"
+            android:textSize="@dimen/text_button_30" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_order"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/view_text_60"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="2枚"
+
+            android:textColor="@color/home_text_mid"
+            android:textSize="@dimen/text_button_30" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:layout_marginRight="@dimen/view_margin_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_margin_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_order"
+            android:layout_marginLeft="@dimen/view_text_60"
+            android:maxLines="1"
+            android:text="获取时间"
+            android:textColor="@color/home_text"
+            android:textSize="@dimen/text_button_30" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linear_order"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/view_text_60"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="2017/8/12"
+
+            android:textColor="@color/home_text_mid"
+            android:textSize="@dimen/text_button_30" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

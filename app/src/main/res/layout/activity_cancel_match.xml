@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/pay_success_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="780px"
+        android:layout_below="@+id/framelayout_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/view_margin_15"
+        android:layout_marginRight="@dimen/view_margin_15"
+        android:background="@mipmap/pay_fail_bg">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_button_90"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_button_90"
+
+                android:text="原因"
+                android:textColor="@color/homt_title_black"
+                android:textSize="@dimen/view_margin_30" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_60"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:button="@drawable/checkbox_select"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:text="身体不适，不能进行参加"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_60"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:button="@drawable/checkbox_select"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:text="比赛距离较远，不能如期到达参赛地点"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_margin_60"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:button="@drawable/checkbox_select"
+                android:paddingLeft="@dimen/view_margin_15"
+                android:text="选错部落，需要重新选择"
+
+                />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/view_margin_30"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+
+                android:layout_marginLeft="@dimen/view_button_90"
+                android:text="其他原因"
+                android:textColor="@color/homt_title_black"
+                android:textSize="@dimen/view_margin_30" />
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200px"
+                android:layout_marginLeft="@dimen/view_margin_60"
+                android:layout_marginRight="@dimen/view_margin_60"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:background="@mipmap/edit_bg"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_margin_15"
+                    android:layout_marginRight="@dimen/view_margin_15"
+                    android:layout_marginTop="@dimen/view_margin_15"
+                    android:background="@null"
+                    android:ems="14"
+                    android:hint="@string/cancel_match_tip"
+                    android:paddingLeft="@dimen/view_margin_15"
+                    android:textColorHint="@color/home_text"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/view_margin_30" />
+            </com.zhy.autolayout.AutoLinearLayout>
+            >
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        >
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:paddingBottom="20px"
+       android:layout_marginTop="@dimen/view_margin_30"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@mipmap/btn_login"
+        android:gravity="center"
+        android:text="@string/comfirm"
+        android:textColor="@color/login_withe"
+        android:textSize="40px" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bbc.bbclub.c">
+
+    <application
+        android:name=".base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="design_width"
+            android:value="750" />
+        <meta-data
+            android:name="design_height"
+            android:value="1334" />
+
+        <activity android:name=".Login.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UnLogin.LoginActivity" />
+        <activity android:name=".UnLogin.HomeActivity" />
+        <activity android:name=".UnLogin.PayPage" />
+        <activity android:name=".UnLogin.PaySuccessActivity" />
+        <activity android:name=".UnLogin.PayFailActivity" />
+        <activity android:name=".UnLogin.EditInfoActivity" />
+        <activity android:name=".UnLogin.EditNameActivity" />
+        <activity android:name=".UnLogin.NearClubActivity" />
+        <activity android:name=".UnLogin.MoreVideoActivity" />
+        <activity android:name=".base.BaseActivity" />
+        <activity android:name=".Login.Index.PersonInfoActivity" />
+        <activity android:name=".Login.Index.UpdatePersonInfoActivity" />
+        <activity android:name=".Login.Index.SignRecordActivity" />
+        <activity android:name=".Login.Match.ApplyActivity" />
+        <activity android:name=".Login.Match.ApplyInfoActivity" />
+        <activity android:name=".Login.Match.ApplyFinshActivity" />
+        <activity android:name=".Login.Match.OtherMatchActivity" />
+        <activity android:name=".Login.Match.MyMatchActivity" />
+        <activity android:name=".Login.Match.MatchDetailMyActivity" />
+        <activity android:name=".Login.Match.WasMyMatchActivity" />
+        <activity android:name=".Login.Club.UpVideoActivity" />
+        <activity android:name=".Login.Club.UpSuccessActivity" />
+        <activity android:name=".Login.Club.UpFailActivity" />
+        <activity android:name=".Login.Index.MyVideoActivity" />
+        <activity android:name=".Login.Index.EditVideoActivity" />
+        <activity android:name=".Login.Club.ClubDetailActivity" />
+        <activity android:name=".Login.Club.ClubMoreVideoActivity" />
+        <activity android:name=".Login.Index.RecentMatchActivity" />
+        <activity android:name=".Login.Index.NextMatchActivity" />
+        <activity android:name=".Login.Index.MedalDetailActivity" />
+        <activity android:name=".Login.Match.CancelMatchActivity" />
+        <activity android:name=".Login.Match.CancelSuccessActivity" />
+        <activity android:name=".Login.Match.CancelfailActivity" />
+        <activity android:name=".Login.Index.DelVideoSuccessActivity" />
+        <activity android:name=".Login.Index.DelVideoFailActivity" />
+        <activity android:name=".Login.Index.UpdateSuccessActivity" />
+        <activity android:name=".Login.Index.UpdateFailActivity" />
+        <activity android:name=".Login.Index.RecordingVideoActivity"></activity>
+    </application>
+
+</manifest>

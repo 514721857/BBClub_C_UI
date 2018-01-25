@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@mipmap/joinclub_bg"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="700px"
+        android:layout_height="1009px"
+        android:layout_below="@+id/framelayout_top"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/pay_bg">
+
+
+        <TextView
+            android:id="@+id/pay_select_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="101px"
+            android:layout_marginTop="66px"
+            android:text="当前为你定位到广州"
+            android:textColor="@color/home_text"
+            android:textSize="35px"
+
+            />
+
+        <TextView
+            android:id="@+id/pay_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_select_city"
+            android:layout_marginLeft="101px"
+            android:layout_marginTop="29px"
+            android:text="为您选择了"
+            android:textColor="@color/home_text"
+            android:textSize="35px"
+
+            />
+
+        <TextView
+            android:id="@+id/pay_select_name"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pay_select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29px"
+            android:text="广州比比部落"
+            android:textColor="@color/home_text"
+            android:textSize="60px"
+
+            />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="422px"
+            >
+
+            <TextView
+                android:id="@+id/pay_charge_text"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="101px"
+
+                android:text="加入费用"
+                android:textColor="@color/home_text"
+                android:textSize="35px"
+
+                />
+
+            <ImageView
+
+                android:layout_alignBottom="@+id/pay_charge_text"
+                android:layout_alignParentRight="true"
+                android:id="@+id/question_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90px"
+                android:src="@mipmap/question" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="495px"
+
+            >
+
+            <TextView
+
+                android:id="@+id/pay_charge_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥300"
+                android:textColor="@color/colorAccent"
+                android:textSize="80px" />
+
+            <TextView
+                android:id="@+id/pay_charge_money_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pay_charge_money"
+                android:layout_margin="15px"
+                android:layout_toRightOf="@+id/pay_charge_money"
+                android:text="/半年"
+                android:textColor="@color/home_text"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="45px"
+            android:layout_marginLeft="@dimen/view_button_90"
+            android:layout_marginRight="@dimen/view_button_90"
+            android:orientation="vertical"
+            >
+
+            <com.zhy.autolayout.AutoRelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pay_ali"
+                   />
+
+                <ImageView
+                    android:id="@+id/pay_icon_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pay_icon_select"/>
+
+
+                <TextView
+                    android:text="支付宝"
+                    android:id="@+id/text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/pay_icon_select"
+                    android:gravity="right"
+                    android:textColor="@color/home_text"
+                    android:textSize="35px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <View
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_color" />
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_right_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@mipmap/pay_wx"/>
+
+                <ImageView
+                    android:id="@+id/pay_icon_default"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/pay_icon_default"/>
+
+
+                <TextView
+                    android:text="微信"
+                    android:id="@+id/text_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@id/pay_icon_default"
+                    android:gravity="right"
+                    android:textColor="@color/home_text"
+                    android:textSize="35px" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@mipmap/btn_login"
+        android:gravity="center"
+        android:paddingBottom="20px"
+        android:text="立即支付"
+        android:textColor="@color/login_withe"
+        android:textSize="40px" />
+</com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

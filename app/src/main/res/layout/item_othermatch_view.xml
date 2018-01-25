@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="@dimen/view_margin_15"
+    android:layout_marginRight="@dimen/view_margin_15"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="65px"
+        android:layout_marginLeft="@dimen/view_margin_30"
+        android:background="@mipmap/match_name_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/near_club"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州赛区"
+            android:textColor="@color/home_text_mid"
+            android:textSize="@dimen/text_button_30" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    >
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450px"
+        android:layout_marginTop="@dimen/view_margin_15"
+
+        android:background="@mipmap/match_item_bg">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="330px"
+            android:layout_marginLeft="@dimen/view_margin_30"
+            android:layout_marginRight="@dimen/view_margin_30"
+            android:src="@mipmap/jia_img" />
+
+        <TextView
+            android:id="@+id/match_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/img"
+            android:layout_marginBottom="50px"
+            android:layout_marginLeft="@dimen/view_margin_60"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:padding="5px"
+            android:text="截止报名时间：2017-09-02"
+            android:textColor="@color/homt_title_black"
+            android:textSize="@dimen/text_button_30" />
+
+        <Button
+            android:id="@+id/btn_once_join"
+            android:layout_width="240px"
+            android:layout_height="70px"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="255px"
+            android:background="@mipmap/btn_login"
+            android:gravity="center"
+            android:text="@string/once_join"
+            android:textColor="@color/login_withe"
+            android:textSize="30px" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

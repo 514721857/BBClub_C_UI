@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:clipToPadding="true"
+    android:background="@mipmap/home_bg" >
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+    <com.zhy.autolayout.AutoLinearLayout
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="750px"
+        android:layout_height="735px"
+        android:background="@mipmap/home_bg1"
+        android:orientation="vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="190px"
+            android:layout_centerHorizontal="true"
+            android:textSize="80px"
+            android:id="@+id/home_award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¥3000000"
+            />
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/top_view_back"
+            android:layout_width="470px"
+            android:layout_height="267px"
+            android:layout_gravity="center_vertical"
+            android:background="@mipmap/home_bg2">
+
+
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="19px"
+                android:layout_centerHorizontal="true"
+                android:textSize="68px"
+                android:id="@+id/my_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/match_mine"
+                />
+
+            <TextView
+                android:id="@+id/other_match"
+                android:textSize="35px"
+                android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/match_other"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="43px"
+                android:layout_alignParentBottom="true"
+                />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@+id/home_more"
+            android:id="@+id/match_list"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:layout_marginRight="@dimen/view_margin_15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>>
+    </ScrollView>>
+</com.zhy.autolayout.AutoLinearLayout>

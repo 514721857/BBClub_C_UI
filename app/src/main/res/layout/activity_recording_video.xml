@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/joinclub_bg"
+    >
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/view_margin_30"
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:background="@mipmap/recording_bg"
+            android:layout_width="match_parent"
+            android:layout_height="830px"
+
+            >
+
+            <ImageView
+                android:src="@drawable/video_bg"
+                android:layout_marginLeft="40px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:layout_marginBottom="@dimen/view_margin_15"
+                android:layout_width="fill_parent"
+                android:layout_height="440px"
+                />
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/view_margin_60"
+                android:layout_marginRight="@dimen/view_margin_60"
+                android:layout_marginBottom="@dimen/view_margin_60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_button_90"
+
+                    android:paddingRight="@dimen/view_margin_30">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:text="@string/video_name"
+                        android:textColor="@color/home_text_mid"
+
+                        android:textSize="@dimen/text_button_30" />
+
+
+                    <EditText
+                        android:id="@+id/et_verify_code"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:hint="点击输入视频标题"
+                        android:textColor="@color/home_text_mid"
+                        android:maxLines="1"
+                        android:textColorHint="@color/home_text"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_button_30" />
+
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:id="@+id/update_shop_rel_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_button_90"
+                    android:paddingRight="@dimen/view_margin_30">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/view_margin_15"
+                        android:text="@string/video_club"
+                        android:textColor="@color/home_text_mid"
+                        android:textSize="@dimen/text_button_30"
+                        android:id="@+id/textView2" />
+
+
+                    <TextView
+                        android:id="@+id/text_club"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textColor="@color/colorAccent"
+                        android:drawablePadding="@dimen/view_margin_15"
+                        android:text="比比部落"
+                        android:drawableRight="@drawable/down"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/text_button_30"
+                        android:layout_alignBaseline="@+id/textView2"
+                        android:layout_alignBottom="@+id/textView2"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <Button
+            android:id="@+id/up_comfirm"
+            android:layout_width="fill_parent"
+            android:layout_height="110px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/view_margin_60"
+            android:layout_marginLeft="100px"
+            android:layout_marginRight="100px"
+            android:background="@mipmap/btn_login"
+            android:gravity="center"
+            android:paddingBottom="20px"
+            android:text="@string/comfirm_up"
+            android:textColor="@color/login_withe"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+
+</com.zhy.autolayout.AutoLinearLayout>

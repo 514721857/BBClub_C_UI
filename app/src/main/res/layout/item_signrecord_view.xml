@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="250px"
+        android:orientation="horizontal"
+    android:gravity="center"
+        android:background="@mipmap/sign_record_bg"
+        >
+    <ImageView
+       android:layout_marginLeft="@dimen/text_text_80"
+        android:src="@mipmap/sign_item_img"
+        android:id="@+id/img1"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/view_margin_30"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:id="@+id/record_name"
+            android:text="广州比比健身中心"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/homt_title_black"
+            android:textSize="@dimen/view_margin_30"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/view_margin_30"
+            android:id="@+id/record_time"
+            android:text="2017-8-12-16:40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/view_margin_30"
+            />
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+        </com.zhy.autolayout.AutoLinearLayout>

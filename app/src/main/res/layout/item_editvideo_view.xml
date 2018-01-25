@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.zhy.autolayout.AutoLinearLayout
+    android:id="@+id/video_bg"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+    android:padding="10px"
+        android:layout_height="380px"
+        android:orientation="horizontal"
+    android:background="@mipmap/video_bg"
+        >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/view_margin_15"
+            android:layout_marginLeft="@dimen/view_margin_15"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="@dimen/view_margin_15"
+            android:layout_weight="1.0"
+
+            android:orientation="vertical">
+
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/video_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/play" />
+
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+            <TextView
+                android:id="@+id/video_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/view_margin_15"
+                android:layout_marginTop="@dimen/view_margin_15"
+                android:text="健身中心介绍视频"
+                android:textColor="@color/homt_title_black"
+                android:textSize="@dimen/view_margin_30" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>

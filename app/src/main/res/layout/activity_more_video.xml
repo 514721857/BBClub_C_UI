@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/club_bg" >
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+    <android.support.v7.widget.RecyclerView
+
+        android:id="@+id/video_morevideo_list"
+        android:layout_marginLeft="@dimen/view_margin_15"
+        android:layout_marginRight="@dimen/view_margin_15"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+</com.zhy.autolayout.AutoLinearLayout>

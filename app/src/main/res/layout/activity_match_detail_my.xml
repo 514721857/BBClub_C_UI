@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/joinclub_bg"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+    <com.zhouwei.mzbanner.MZBannerView
+        android:layout_marginLeft="@dimen/view_margin_15"
+        android:layout_marginRight="@dimen/view_margin_15"
+        android:id="@+id/match_detail_banner"
+        android:layout_width="match_parent"
+        android:layout_height="330px"
+        android:layout_marginTop="10dp"
+        app:open_mz_mode="false"
+        app:canLoop="true"
+        app:indicatorAlign="center"
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1900px"
+                android:layout_below="@+id/linear_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/view_margin_30"
+                android:layout_marginRight="@dimen/view_margin_30"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:background="@mipmap/match_detail_bg">
+
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1900px"
+
+
+                    >
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/first_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="100px"
+                        >
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:id="@+id/linear_order"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/view_margin_60"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:maxLines="1"
+                            android:text="@string/info_no"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/info_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="000564688"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/view_margin_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/view_margin_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="@string/info_name"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/info_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="张三"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/view_margin_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/view_margin_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="@string/info_sex"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/info_sex"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="女"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/view_margin_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/view_margin_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="@string/info_age"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/info_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="1987-02-2"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/view_margin_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+                   </com.zhy.autolayout.AutoLinearLayout>
+                    <!--  1  <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1140px"
+                android:layout_margin="@dimen/view_margin_30"
+                android:background="@mipmap/apply_bg">-->
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/second_layout"
+                        android:layout_below="@+id/first_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="120px"
+                        >
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="代表出战的部落"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/my_match_club"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="广东部落"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/view_margin_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/view_margin_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="参加的赛区"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/my_match_area"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="珠海赛区"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/text_button_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+                    <com.zhy.autolayout.AutoRelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="@dimen/view_margin_30"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_marginLeft="@dimen/view_text_60"
+                            android:maxLines="1"
+                            android:text="勋章等级"
+                            android:textColor="@color/home_text_mid"
+                            android:textSize="@dimen/view_margin_30" />
+
+
+                        <TextView
+                            android:id="@+id/xuzhang_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/linear_order"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/view_text_60"
+                            android:drawablePadding="@dimen/view_margin_15"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:text="黄金级"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="@dimen/text_button_30" />
+
+                    </com.zhy.autolayout.AutoRelativeLayout>
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--     2    <///////////>-->
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:id="@+id/third_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/second_layout"
+                        android:layout_marginTop="130px"
+                        android:orientation="vertical">
+
+                        <TextView
+
+                            android:id="@+id/home_award"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_button_90"
+                            android:text="参赛条件"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+
+
+
+
+                            <TextView
+                                android:paddingBottom="@dimen/linepaddingbutton"
+                                android:layout_marginTop="@dimen/view_margin_30"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/view_margin_60"
+                                android:lineSpacingExtra="30px"
+                                android:text="1.务必是以部落身份参加\n2.比赛只认准会员\n3.无疾病身体健康者\n4.身体承受能力强，经常健身者"
+                                android:textColor="@color/homt_title_black"
+                                android:textSize="28px" />
+
+
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--      3    <///////////>-->
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_below="@+id/third_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="90px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_button_90"
+                            android:text="参赛规则"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_margin_60"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:lineSpacingExtra="30px"
+                            android:text="1.比赛公平公正 \n2.全长210公里最先到达终点者为冠军 \n3.中途按方向标的方向,中途随意改路者弃权处理"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="28px" />
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+                    <!--       4   <///////////>-->
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/view_margin_30"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_button_90"
+                            android:text="时间"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_margin_60"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:text="2017-09-01 上午10点"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="28px"  />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_button_90"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:text="集合地点"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_margin_60"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:text="广州市荔湾区信义会馆8号"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="28px"  />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_button_90"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:text="比赛地点"
+                            android:textColor="@color/homt_title_black"
+                            android:textSize="30px"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/view_margin_60"
+                            android:layout_marginTop="@dimen/view_margin_30"
+                            android:text="广州芳村地铁站"
+                            android:textColor="@color/homt_title_black"
+
+                            android:textSize="28px"  />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+                    <!--       5  <///////////>-->
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+            <Button
+                android:id="@+id/cancel_now"
+                android:layout_width="fill_parent"
+                android:layout_height="110px"
+                android:layout_marginBottom="@dimen/view_margin_30"
+                android:layout_marginLeft="100px"
+                android:layout_marginRight="100px"
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:background="@mipmap/btn_login"
+                android:gravity="center"
+                android:paddingBottom="20px"
+                android:text="@string/cancel_join"
+                android:textColor="@color/login_withe"
+                android:textSize="40px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </ScrollView>
+    >
+</com.zhy.autolayout.AutoLinearLayout>

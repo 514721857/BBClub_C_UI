@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/pay_success_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <include
+        android:id="@+id/framelayout_top"
+        layout="@layout/top_view" />
+
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/info_sex"
+        android:layout_below="@+id/framelayout_top"
+        android:layout_width="360px"
+        android:layout_height="240px"
+        android:clipChildren="false"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home_shuf"
+            android:layout_width="140px"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+
+            android:clipChildren="false" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+
+        android:layout_width="690px"
+        android:layout_height="700px"
+        android:layout_below="@+id/info_sex"
+        android:layout_centerHorizontal="true"
+        android:background="@mipmap/edit_bg1">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="@dimen/view_margin_30"
+            android:layout_marginRight="@dimen/view_margin_30"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="45px"
+                android:id="@+id/info_height_tip"
+
+                android:layout_centerHorizontal="true"
+                android:drawableBottom="@mipmap/tip_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="身高"
+
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_button_30" />
+
+
+            <com.xyz.xruler.XyzRuler
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/info_height_tip"
+                android:layout_alignBaseline="@+id/info_height_tip"
+                android:id="@+id/ruler"
+                android:layout_width="wrap_content"
+                android:layout_height="200px"
+                app:rBegin="90"
+                app:rBorderColor="#FF7F18"
+                app:rBorderWidth="5dp"
+                app:rEnd="300"
+                app:rIsTop="false"
+                app:rLineHeight="12dp"
+                app:rLineToText="6dp"
+                app:rPixel="20"
+                app:rIsRect="false"
+                app:rLineColor="#999999"
+                app:rTextColor="#999999"
+                app:rTextSize="12dp"
+             />
+
+
+
+            <ImageView
+                android:layout_gravity="top"
+                android:gravity="top"
+
+                android:layout_alignBaseline="@+id/ruler"
+                android:layout_below="@+id/ruler"
+                android:id="@+id/tip_up"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/tip_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/view_margin_30"
+                android:background="@mipmap/text_bg"
+                android:id="@+id/info_height"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="95px"
+                android:layout_height="85px"
+                android:layout_below="@+id/tip_up"
+                android:text="170 /n CM"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_button_30" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/linear_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100px"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_order"
+                android:layout_marginLeft="@dimen/view_text_60"
+                android:maxLines="1"
+                android:text="目前体重："
+                android:textColor="@color/home_text"
+                android:textSize="@dimen/text_button_30" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/linear_order"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/view_text_60"
+                android:gravity="right"
+                android:maxLines="1"
+                android:text="90kg"
+                android:drawablePadding="@dimen/view_margin_15"
+                android:drawableRight="@mipmap/down"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_button_30" />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="fill_parent"
+        android:layout_height="110px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/view_margin_60"
+        android:layout_marginLeft="100px"
+        android:layout_marginRight="100px"
+        android:background="@mipmap/btn_login"
+        android:gravity="center"
+        android:paddingBottom="20px"
+        android:text="下一步"
+        android:textColor="@color/login_withe"
+        android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

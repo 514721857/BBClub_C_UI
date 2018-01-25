@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#fafafa</color><!--状态栏颜色-->
+    <color name="colorAccent">#FF7F18</color>
+
+    <color name="match_bg">#fcfdfd</color>
+
+
+
+    <drawable name="trans">#00000000</drawable>
+    <drawable name="img_selected">#d7d7d7</drawable>
+    <drawable name="img_defaul">#fafafa</drawable>
+
+    <drawable name="img_selecteds">#d7d7d7</drawable>
+    <drawable name="img_defauls">#FF7F18</drawable>
+    <color name="login_withe">#ffffff</color>
+    <color name="login_line_no">#999999</color>
+    <color name="homt_title_black">#333333</color>
+    <color name="home_text_mid">#666666</color>
+    <color name="home_text">#999999</color>
+    <color name="login_text">#999999</color>
+    <color name="line_color">#d7d7d7</color>
+    <color name="pay_success_text">#69da9e</color>
+    <color name="pay_fail_text">#e54a4a</color>
+
+    <color name="main_line">#e2e2e2</color>
+
+
+
+
+
+
+</resources>
